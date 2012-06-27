@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/layout_map_dc"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  >
+  
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/layout_map_dc"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  >
+  
+     		<TableRow android:gravity="center" > 
+
+	  		<Button
+	    		android:id="@+id/layout_map_dc_ok"
+	    		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="         Ok         "
+				android:layout_gravity="center"
+			
+	    	/>
+
+	    	<Button
+	    		android:id="@+id/layout_map_dc_cancel"
+	    		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="       Voltar       "
+	    		
+	    	/>
+	    	
+	    	</TableRow>
+	    </TableLayout>
+			
+			<com.google.android.maps.MapView
+				android:id="@+id/layout_map_dc_mapa"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:enabled="true"
+				android:clickable="true"
+				android:apiKey="0D8vO534nPiNpOWgVdws2EFHFKt44w2191DYBAA"
+			/> 
+
+  	
+</LinearLayout>

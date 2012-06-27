@@ -1,0 +1,50 @@
+10
+
+dir
+33
+https://wiki-comp-mobile-ufc.googlecode.com/svn/trunk/res
+https://wiki-comp-mobile-ufc.googlecode.com/svn
+
+
+
+2012-06-18T02:19:31.409523Z
+33
+franzejr@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1d2d64e9-4bcd-cbbe-cf6e-7b2dda057aeb
+
+
+
+
+
+
+0
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+layout
+dir
+
+values
+dir
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufc.engsoft"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+<!-- 	<uses-permission -->
+<!--         android:name="android.permission.INTERNET" /> -->
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+       <uses-library   android:name="com.google.android.maps" />
+        
+        <activity
+            android:name=".activities.GridInicio"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CircuitosDigitais"></activity>
+        <activity android:name=".EstruturasDeDados"></activity>
+        <activity android:name=".GetJSONWebservice"></activity>
+        
+        <!-- Activities genericas que recebem parametros -->
+        <activity android:name=".activities.GenericView"></activity>
+        <activity android:name=".activities.SearchView"></activity>
+        <activity android:name=".activities.MapDC"></activity>
+        
+        <activity android:name=".activities.MenuGraduacao" ></activity>
+        <activity android:name=".activities.MenuPosGraduacao" ></activity>
+        <activity android:name=".activities.MenuAreasDeAtuacao" ></activity>
+        <activity android:name=".activities.MenuGruposDePesquisa" ></activity>
+        <activity android:name=".activities.MenuExtensao" ></activity>
+        <activity android:name=".activities.MenuEstruturaFisica" ></activity>
+        <activity android:name=".activities.MenuMais" ></activity>
+        
+        <!-- Activities referentes a Matriz Curricular -->
+        <activity android:name=".activities.matrizcurricular.MatrizCurricular" ></activity>
+        <activity android:name=".activities.matrizcurricular.Semestre1" ></activity>
+        <activity android:name=".activities.matrizcurricular.Semestre2" ></activity>
+        <activity android:name=".activities.matrizcurricular.Semestre3" ></activity>
+        <activity android:name=".activities.matrizcurricular.Semestre4" ></activity>
+        <activity android:name=".activities.matrizcurricular.Semestre5" ></activity>
+        <activity android:name=".activities.matrizcurricular.Semestre6" ></activity>
+        <activity android:name=".activities.matrizcurricular.Semestre7" ></activity>
+    
+    	 <!-- Activities do mapa -->
+    	 <activity android:name=".HelloGoogleMaps" android:label="@string/app_name"
+     		android:theme="@android:style/Theme.NoTitleBar"></activity>
+    	 <!-- Activity das Noticias -->
+    	<activity android:name=".activities.NewsActivity" ></activity> 
+    
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ 
+
+</manifest>

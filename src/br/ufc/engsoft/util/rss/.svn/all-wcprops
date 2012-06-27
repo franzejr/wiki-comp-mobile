@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss
+END
+RSSFault.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSFault.java
+END
+RSSFeed.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSFeed.java
+END
+Uri.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/Uri.java
+END
+MediaThumbnail.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/MediaThumbnail.java
+END
+Dates.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/Dates.java
+END
+RSSItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSItem.java
+END
+RSSLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSLoader.java
+END
+Resources.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/Resources.java
+END
+RSSBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSBase.java
+END
+RSSException.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSException.java
+END
+MediaAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/MediaAttributes.java
+END
+RSSParserSPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSParserSPI.java
+END
+RSSReaderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSReaderException.java
+END
+RSSHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSHandler.java
+END
+RSSReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSReader.java
+END
+RSSConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSConfig.java
+END
+RSSParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/rss/RSSParser.java
+END

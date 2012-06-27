@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util
+END
+Network.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/Network.java
+END
+StringNormalizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/StringNormalizer.java
+END
+ImageAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/ImageAdapter.java
+END
+MapOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/MapOverlay.java
+END
+JSONFunctions.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/33/trunk/src/br/ufc/engsoft/util/JSONFunctions.java
+END
