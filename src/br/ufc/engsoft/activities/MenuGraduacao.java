@@ -70,11 +70,7 @@ public class MenuGraduacao extends ListActivity {
 					startActivity(intent);
 					
 				}
-
-				// When clicked, show a toast with the TextView text
-				// Toast.makeText(getApplicationContext(),
-				// ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
-			}
+		}
 		});
 	}
 
