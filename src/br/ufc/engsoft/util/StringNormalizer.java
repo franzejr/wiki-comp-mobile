@@ -63,7 +63,7 @@ public class StringNormalizer {
 		}
 	}
 
-	public String getName(String search) {
+	public String getName(String search) throws NullPointerException {
 		String search_lower = search.toLowerCase();
 		search = removerAcentos(search_lower);
 

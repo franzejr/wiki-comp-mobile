@@ -28,72 +28,57 @@ public class GridInicio extends Activity {
 		gridview.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id) {
-				//News
-				if (position == 0){
-					if(Network.isNetworkAvailable(context)){						
-						startActivity(new Intent(GridInicio.this,NewsActivity.class));
+				
+				if(Network.isNetworkAvailable(context)){						
+					//News
+					if (position == 0){
+							startActivity(new Intent(GridInicio.this,NewsActivity.class));
 					}
-					else{
-						Toast.makeText(GridInicio.this, "Precisa de Internet",
-								Toast.LENGTH_SHORT).show();
-					}
-				}
-				//Graduacao
-				else if (position == 1) {
-					startActivity(new Intent(GridInicio.this,
-							MenuGraduacao.class));
-				}
-				//PosGraduacao
-				else if (position == 2) {
-					startActivity(new Intent(GridInicio.this,
-							MenuPosGraduacao.class));
-				}
-				//Areas de Atuacao
-				else if (position == 3) {
-					startActivity(new Intent(GridInicio.this,
-							MenuAreasDeAtuacao.class));
-				}
-				//Grupos de Pesquisa
-				else if (position == 4) {
-					startActivity(new Intent(GridInicio.this,
-							MenuGruposDePesquisa.class));
-				}
-				//Extensao
-				else if (position == 5) {
-					startActivity(new Intent(GridInicio.this,
-							MenuExtensao.class));
-				}
-				//Mapa
-				else if (position == 6) {
-					if(Network.isNetworkAvailable(context)){
+					//Graduacao
+					else if (position == 1) {
 						startActivity(new Intent(GridInicio.this,
-								MapDC.class));
+								MenuGraduacao.class));
 					}
-					else{
-						Toast.makeText(GridInicio.this, "Precisa de Internet",
-								Toast.LENGTH_SHORT).show();
-					}
-					
-				}
-				//Mais
-				else if (position == 7) {
-					startActivity(new Intent(GridInicio.this,
-							MenuMais.class));
-				}
-				//Busca
-				else if (position == 8) {
-					if(Network.isNetworkAvailable(context)){						
+					//PosGraduacao
+					else if (position == 2) {
 						startActivity(new Intent(GridInicio.this,
-								SearchView.class));
+								MenuPosGraduacao.class));
 					}
-					else{
-						Toast.makeText(GridInicio.this, "Precisa de Internet",
-								Toast.LENGTH_SHORT).show();
+					//Areas de Atuacao
+					else if (position == 3) {
+						startActivity(new Intent(GridInicio.this,
+								MenuAreasDeAtuacao.class));
+					}
+					//Grupos de Pesquisa
+					else if (position == 4) {
+						startActivity(new Intent(GridInicio.this,
+								MenuGruposDePesquisa.class));
+					}
+					//Extensao
+					else if (position == 5) {
+						startActivity(new Intent(GridInicio.this,
+								MenuExtensao.class));
+					}
+					//Mapa
+					else if (position == 6) {
+							startActivity(new Intent(GridInicio.this,
+									MapDC.class));
+					}
+					//Mais
+					else if (position == 7) {
+						startActivity(new Intent(GridInicio.this,
+								MenuMais.class));
+					}
+					//Busca
+					else if (position == 8) {						
+							startActivity(new Intent(GridInicio.this,
+									SearchView.class));
 					}
 				}
-
-				Toast.makeText(GridInicio.this, "" + position,
-						Toast.LENGTH_SHORT).show();
+				else{
+					Toast.makeText(GridInicio.this, "É necessário ter acesso à internet!",
+							Toast.LENGTH_SHORT).show();
+				}
 			}
 		});
 	}

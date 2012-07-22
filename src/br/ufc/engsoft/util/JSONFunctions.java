@@ -26,8 +26,8 @@ import android.util.Log;
  */
 
 public class JSONFunctions {
-	
-	//Metodo que sera executado em uma thread separada
+
+	// Metodo que sera executado em uma thread separada
 	@Background
 	public static String getJSONfromURL(String url) {
 		InputStream is = null;
@@ -68,9 +68,9 @@ public class JSONFunctions {
 			Log.e("log_tag", "Error parsing data " + e.toString());
 		}
 		Log.i("result", result);
-		
-		//Retirando a parte que tem o nome [editar]
-		//result.replace("[editar]","");
+
+		// Retirando a parte que tem o nome [editar]
+		// result.replace("[editar]","");
 		return result;
 	}
 
@@ -114,15 +114,14 @@ public class JSONFunctions {
 
 	/*
 	 * Retorna o titulo da pagina que foi procurada. este metodo utiliza o
-	 * metodo de retirar a sujeiras, dado um titulo que foi buscado.
-	 * Esse metodo eh utilizado na parte da busca
+	 * metodo de retirar a sujeiras, dado um titulo que foi buscado. Esse metodo
+	 * eh utilizado na parte da busca
 	 */
 	@Background
 	public static String getPageTitle(String title) {
 		String url = setTextSearch(title);
 		String json = JSONFunctions.getJSONfromURL(url);
 		String pages = "";
-		String text = "";
 		JSONObject json1;
 
 		try {
@@ -131,8 +130,8 @@ public class JSONFunctions {
 					.getJSONObject("pages").toString();
 			Log.i("pages", pages);
 			// Se tiver um '-1' eh porque a pagina nao foi achada.
-			if (pages.contains("-1")) {
-				// Log.i("page not found", pages);
+			if (pages.contains("-1") || pages.contains("The page you specified doesn't exis")) {
+				Log.i("page not found", pages);
 				return "404 - Pagina Nao encontrada";
 			} else {
 				String[] v = pages.split(":");
@@ -140,11 +139,8 @@ public class JSONFunctions {
 				Log.i("limpo:", validarTitulo(v[2]));
 				return validarTitulo(v[2]);
 			}
-			// Setando os valores que foram buscados
-
 		} catch (Exception e) {
-			System.out.println("Erro na hora de parsear a busca:   "
-					+ e.getStackTrace());
+
 		}
 
 		return "Houve um erro ao procurar a página";

@@ -32,7 +32,7 @@ public final class R {
         public static final int wcm_splash=0x7f020012;
     }
     public static final class id {
-        public static final int b_buscarPagina=0x7f05000c;
+        public static final int b_buscarPagina=0x7f05000d;
         public static final int gridView=0x7f050005;
         public static final int image=0x7f050004;
         public static final int imageView1=0x7f05000a;
@@ -41,10 +41,11 @@ public final class R {
         public static final int layout_map_dc_mapa=0x7f050009;
         public static final int layout_map_dc_ok=0x7f050007;
         public static final int linearLayout1=0x7f050002;
-        public static final int msgBusca=0x7f05000d;
+        public static final int msgBusca=0x7f05000e;
         public static final int scrollView1=0x7f050001;
-        public static final int searchText=0x7f05000b;
+        public static final int searchText=0x7f05000c;
         public static final int text=0x7f050003;
+        public static final int textView1=0x7f05000b;
         public static final int title=0x7f050000;
     }
     public static final class layout {

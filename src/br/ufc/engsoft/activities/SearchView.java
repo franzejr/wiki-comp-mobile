@@ -41,33 +41,32 @@ public class SearchView extends Activity {
 				
 				StringNormalizer m = new StringNormalizer();
 				
-				
 				String tituloBuscado = String.valueOf(searchText.getText());
+				Log.i("tituloBuscado", tituloBuscado);
 				
-				String tituloNormalizado = m.getName(tituloBuscado);
-
-				Log.i("texto do click", tituloNormalizado);
-				// EditText searchText = (EditText)
-				// findViewById(R.id.searchText);
+				String tituloNormalizado = "";
 				
-				String tituloRetornado = JSONFunctions.getPageTitle(tituloNormalizado);
+				tituloNormalizado = m.getName(tituloBuscado);
 				
-				if(tituloRetornado.contains("404")){
-					msgBusca.setText("Pagina não encontrada");
-				}else{
-					//Se a pagina existe, entao inicia a nova intent com o que foi retornado.
-					Intent intent = new Intent(SearchView.this, GenericView.class);
-					intent.putExtra("title", tituloRetornado);
-
-					startActivity(intent);
-
+				if (tituloNormalizado == null){					
+					msgBusca.setText("Disciplina não encontrada");
 				}
+				else{
+					String tituloRetornado = "";
+					
+					tituloRetornado = JSONFunctions.getPageTitle(tituloNormalizado);	
 				
+					if(tituloRetornado.contains("404")){
+						msgBusca.setText("Disciplina não encontrada");
+					}else{
+						//Se a pagina existe, entao inicia a nova intent com o que foi retornado.
+						Intent intent = new Intent(SearchView.this, GenericView.class);
+						intent.putExtra("title", tituloRetornado);
+						startActivity(intent);
+					}
+				}
 			}
 		});
-
-		// textSearched.setText(nomePagina);
-
 	}
 
 }

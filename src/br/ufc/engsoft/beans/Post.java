@@ -8,6 +8,7 @@ import br.ufc.engsoft.util.JSONFunctions;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 /*
  * Classe que representa um post da Wiki.
@@ -63,8 +64,7 @@ public class Post {
 			this.text = text;
 
 		} catch (Exception e) {
-			System.out.println("Erro na hora de parsear:   "
-					+ e.getStackTrace());
+			Log.i("Erro na hora de parsear: ", e.getMessage());
 		}
 
 	}
